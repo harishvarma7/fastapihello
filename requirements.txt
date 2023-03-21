@@ -2,3 +2,5 @@ uvicorn
 numpy
 fastapi
 Flask
+sklearn
+pandas
