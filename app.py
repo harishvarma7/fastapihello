@@ -29,10 +29,7 @@ app=FastAPI()
 
 mod=pickle.load(open('model.pkl','rb'))
 
-@app.get('/')
-def hello_world():
-    return {'message': 'Hello, World'}
-    #return render_template("frontend/public/index.html")
+
 @app.post('/prediction')
 def prediction(data:disease):
     data=data.dict()
